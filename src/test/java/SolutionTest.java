@@ -9,12 +9,11 @@ public class SolutionTest {
     @Test
     void enterpriseGitHub() {
       //открыть страницу гита
-      open("https://github.com/");
+      open("https://github.com/enterprise");
       //выберите меню Solutions - enterprise
       $(".HeaderMenu--logged-out").$$("ul li").findBy(text("Solutions")).hover()
               .$(".HeaderMenu-dropdown").$$("ul li").findBy(text("Enterprise")).click();
       //проверка, что заголовок - "Build like the best"
       $(".h1-mktg").shouldHave(text("Build like the best"));
-        sleep(5000);
     }
   }
