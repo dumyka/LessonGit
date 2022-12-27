@@ -15,5 +15,6 @@ public class SolutionTest {
               .$(".HeaderMenu-dropdown").$$("ul li").findBy(text("Enterprise")).click();
       //проверка, что заголовок - "Build like the best"
       $(".h1-mktg").shouldHave(text("Build like the best"));
+        sleep(5000);
     }
   }
