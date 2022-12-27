@@ -9,7 +9,7 @@ public class SolutionTest {
     @Test
     void enterpriseGitHub() {
       //открыть страницу гита
-      open("https://github.com/enterprise");
+      open("https://github.com/startups");
       //выберите меню Solutions - enterprise
       $(".HeaderMenu--logged-out").$$("ul li").findBy(text("Solutions")).hover()
               .$(".HeaderMenu-dropdown").$$("ul li").findBy(text("Enterprise")).click();
