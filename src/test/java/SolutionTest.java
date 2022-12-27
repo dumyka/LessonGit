@@ -11,8 +11,6 @@ public class SolutionTest {
       //открыть страницу гита
       open("https://github.com/");
       //выберите меню Solutions - enterprise
-      //$(".HeaderMenu--logged-out").$$("ul li").findBy(text("Solutions"))
-       //   .hover().$("a").shouldHave(text("Enterprise")).click();
       $(".HeaderMenu--logged-out").$$("ul li").findBy(text("Solutions")).hover()
               .$(".HeaderMenu-dropdown").$$("ul li").findBy(text("Enterprise")).click();
       //проверка, что заголовок - "Build like the best"
